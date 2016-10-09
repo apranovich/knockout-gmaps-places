@@ -1,0 +1,18 @@
+html, body { 
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+}
+#places{
+  position: relative;
+  height: 100%;
+  max-width: 400px;
+}
+#map { 
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 400px;
+  height: 100%; 
+  left: 400px;
+}
