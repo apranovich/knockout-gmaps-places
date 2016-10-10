@@ -3,6 +3,9 @@ html, body {
   margin: 0; 
   padding: 0; 
 }
+h3{
+  text-align: center;
+}
 #places{
   position: relative;
   height: 100%;
@@ -15,4 +18,48 @@ html, body {
   min-width: 400px;
   height: 100%; 
   left: 400px;
+}
+.form-group > label{
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.form-group > input{
+  width: 150px;
+}
+.add-btn{
+  width: 243px;
+  text-align: right;
+  margin-top: 5px;
+}
+.add-btn > button {
+  width: 60px;
+}
+
+.controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 300px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
 }
