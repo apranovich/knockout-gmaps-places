@@ -58,8 +58,32 @@ h3{
   padding: 0 11px 0 13px;
   text-overflow: ellipsis;
   width: 300px;
+  margin-bottom: 10px;
 }
 
 #pac-input:focus {
   border-color: #4d90fe;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: 10px;
+}
+thead { 
+  border-bottom: 1px solid lightgray;
+}
+th {
+  text-align: right;
+  padding: 10px;
+  font-weight: normal;
+}
+.th-name{
+  text-align: left !important;
+}
+td {
+  padding: 10px;
+  text-align: right;
+}
+.td-name{
+  text-align: left;
 }

@@ -8,11 +8,11 @@
       <h3>Add place manually</h3>
       <div class="form-group">
         <label>Latitude</label>
-        <input data-bind="textInput: lat"/>
+        <input type="number" data-bind="textInput: lat"/>
       </div>
       <div class="form-group">
         <label>Longitude</label>
-        <input data-bind="textInput: lng"/>
+        <input type="number" data-bind="textInput: lng"/>
       </div>
       <div class="form-group">
         <label>Name</label>
@@ -27,23 +27,27 @@
       <h3>Search for a place</h3>
       <input id="pac-input" class="controls" type="text" placeholder="Enter a location">
 
-      <p data-bind="if: places().length > 0">My Places I've been to:</p>
-      <table data-bind="if: places().length > 0">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Latitude</th>
-            <th>Longitude</th>
-          </tr>
-        </thead>
-        <tbody data-bind="foreach: places">
-          <tr>
-            <td data-bind="text: name"></td>
-            <td data-bind="text: lat"></td>
-            <td data-bind="text: lng"></td>
-          </tr>
-        </tbody>
-      </table>
+      <hr/>
+
+      <div data-bind="if: places().length > 0">
+        <h3 >Places I've added</h3>
+        <table data-bind="if: places().length > 0">
+          <thead>
+            <tr>
+              <th class="th-name">Name</th>
+              <th>Latitude</th>
+              <th>Longitude</th>
+            </tr>
+          </thead>
+          <tbody data-bind="foreach: places">
+            <tr>
+              <td class="td-name" data-bind="text: name"></td>
+              <td data-bind="text: lat().toFixed(3)"></td>
+              <td data-bind="text: lng().toFixed(3)"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     <div id="map"></div>
 
